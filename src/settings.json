@@ -1,0 +1,27 @@
+{
+    "WIFI": {
+        "SSID": "<SSID>",
+        "PASSWORD": "<PASSWORD>"
+    },
+    "MQTT": {
+        "SERVER": "<SERVER IP>",
+        "PORT": "<SERVER PORT>",
+        "BASE_TOPIC": "desk"
+    },
+    "PINS": {
+        "EN_PIN": 0,
+        "UP_PIN": 12,
+        "DOWN_PIN": 1,
+        "HE_PIN": 9,
+        "UP_BUTTON_PIN": 2,
+        "DOWN_BUTTON_PIN": 6
+    },
+    "MOTION": {
+        "MAX_SPEED": 10,
+        "MIN_SPEED": 0,
+        "MAX_POS": 100,
+        "MIN_POS": 0,
+        "ACCEL": 2,
+        "DECEL": 2
+    }
+}
