@@ -47,12 +47,12 @@ MQTTrotten is a simple micropython + ESP32 project I created to achieve the foll
                 {
                     "label": "ls",
                     "type": "shell",
-                    "command": "ampy ls"
+                    "command": "uv run ampy ls"
                 },
                 {
                     "label": "run file",
                     "type": "shell",
-                    "command": "ampy run ${file}",
+                    "command": "uv run ampy run ${file}",
                     "problemMatcher": [],
                     "group": {
                         "kind": "build",
@@ -62,7 +62,7 @@ MQTTrotten is a simple micropython + ESP32 project I created to achieve the foll
                 {
                     "label": "push project",
                     "type": "shell",
-                    "command": "ampy put ${workspaceFolder}/src/",
+                    "command": "uv run ampy put ${workspaceFolder}/src/",
                 }
             ]
         }
@@ -72,7 +72,7 @@ MQTTrotten is a simple micropython + ESP32 project I created to achieve the foll
     2.2 Configure the .ampy file. This will point ampy to use the correct serial port and baud rate. I include AMPY_DELAY in the config, but I havent noticed a difference in performance when adding a delay. 
 
 
-2. Install `ampy`: `pip install adafruit-ampy`
+2. Install `uv`: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 3. Install Micropython on your board. I'll leave it to the [uPython docs](https://micropython.org/download/) to explain this.
 4. Test serial connection: `Tasks -> Run Task -> ampy ls`
 5. Update the settings file and push the project to the board: `Tasks -> Run Task -> push project`
