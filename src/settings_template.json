@@ -1,0 +1,29 @@
+{
+    "WIFI": {
+        "SSID": "your_wifi_ssid",
+        "PASSWORD": "your_wifi_password"
+    },
+    "MQTT": {
+        "SERVER": "your_server_ip",
+        "PORT": "1883",
+        "BASE_TOPIC": "your_topic_name",
+        "STATUS_INTERVAL_SEC": 600
+    },
+    "PINS": {
+        "EN_PIN": 12,
+        "UP_PIN": 1,
+        "DOWN_PIN": 0,
+        "SCL_PIN": 5,
+        "SDA_PIN": 4
+    },
+    "MOTION": {
+        "MAX_SPEED": 100,
+        "CRAWL_SPEED": 50,
+        "MIN_SPEED": 0,
+        "MAX_POS": 37500,
+        "ON_POS": 50,
+        "MIN_POS": 0,
+        "ACCEL": 5,
+        "DECEL": 5
+    }
+}
